@@ -14,6 +14,7 @@ app.get('/video', function (req, res) {
         res.status(400).send("Range header not found!")
     }
 
+    // This video is 3 MB for Githup purposes try a larger one for your code -- Majid-T
     const videoPath = 'video1.mp4';
     const videoSize = fs.statSync(videoPath).size;
     console.log(videoSize)
